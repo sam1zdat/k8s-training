@@ -120,7 +120,7 @@ kubectl apply -f deployment.yaml --dry-run=client
 
 ### c) Détection d'erreurs dans le manifest
 ```bash
-kubectl apply -f deployment-error.yaml --dry-run=client
+kubectl apply -f deployment-error.yaml
 ```
 👉 Détecte les erreurs comme :
 - Fautes de frappe (ex. `replica` au lieu de `replicas`)
@@ -217,4 +217,5 @@ kubectl delete -f deployment.yaml
 - Consultez la documentation officielle : `kubectl explain --recursive`
 - Explorez les options de formatage : `-o json`, `-o wide`
 - Découvrez d'autres commandes utiles : `kubectl get events --watch`
+
 ```
