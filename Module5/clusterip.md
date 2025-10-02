@@ -48,8 +48,10 @@ echo $SERVICEIP
 
 ### e) Accéder au service à l'intérieur du cluster
 ```bash
-kubectl run curl --image=curlimages/curl --restart=Never -it -- sh
-curl http://$SERVICEIP
+kubectl run busybox --image=busybox --restart=Never --command -- sleep 3600
+kubectl exec -it busybox -- sh
+
+wget http://$SERVICEIP
 ```
 👉 Accède à l'application via l'adresse IP du Service.
 
@@ -131,4 +133,5 @@ kubectl delete -f service-hello-world-clusterip.yaml
 - Testez toujours les configurations dans un environnement de staging
 - Surveillez les endpoints pour vérifier la disponibilité des pods
 - Utilisez des fichiers de configuration déclarative pour une gestion plus facile des ressources
+
 
