@@ -53,6 +53,8 @@ kubectl exec -it busybox -- sh
 
 wget http://$SERVICEIP
 ```
+<img width="1252" height="497" alt="image" src="https://github.com/user-attachments/assets/7f128570-06f2-4f95-a953-89229f736bae" />
+
 👉 Accède à l'application via l'adresse IP du Service.
 
 ### f) Lister les endpoints pour le service
@@ -133,5 +135,6 @@ kubectl delete -f service-hello-world-clusterip.yaml
 - Testez toujours les configurations dans un environnement de staging
 - Surveillez les endpoints pour vérifier la disponibilité des pods
 - Utilisez des fichiers de configuration déclarative pour une gestion plus facile des ressources
+
 
 
