@@ -208,7 +208,7 @@ curl -v http://demo.local:$NODE_PORT/
 **Méthode 3 : Tester depuis un pod dans le cluster**
 ```bash
 # Crée un pod de test avec curl
-kubectl run curl-test --image=curlimages/curl -it --rm
+kubectl run curl-test --image=curlimages/curl -it --rm -- /bin/sh
 
 # Depuis le pod, testez (utilisez l'IP du service ingress)
 curl -H "Host: demo.local" http://ingress-nginx-controller.ingress-nginx.svc.cluster.local
@@ -255,3 +255,4 @@ helm repo remove ingress-nginx
 
 
 ---
+
