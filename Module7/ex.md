@@ -1,4 +1,4 @@
-Voici le TP reformulé avec des commentaires détaillés sur chaque commande et étape :
+
 
 ```markdown
 # 🧪 Démonstration - Gestion du stockage dans Kubernetes
@@ -172,4 +172,5 @@ kubectl delete pvc pvc-claim  # Supprime le PVC
 kubectl delete pv pv-volume  # Supprime le PV
 ```
 👉 **Explication** : Nettoie les ressources. Le PV est supprimé mais les données peuvent être conservées selon la politique de réclamation
+
 ```
