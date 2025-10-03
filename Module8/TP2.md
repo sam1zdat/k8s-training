@@ -1,4 +1,4 @@
----
+
 
 ## 🔹 Exercice 1 — ConfigMap : Variables d’environnement & Fichiers
 
@@ -206,3 +206,4 @@ kubectl -n lab-cfg rollout restart deploy/demo
 * Ex2 : Bonnes pratiques ConfigMap (immuable, clés ciblées).
 * Ex3 : Secrets → env, volume, sécurité.
 * Ex4 : Sécurité avancée → RBAC, rotation.
+
