@@ -116,7 +116,7 @@ spec:
             port: 80
           initialDelaySeconds: 5
           periodSeconds: 10
-
+---
 # Définition d'un Service pour exposer le deployment
 apiVersion: v1
 kind: Service
@@ -128,7 +128,7 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-
+---
 # Définition de la ressource Ingress
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -252,5 +252,6 @@ kubectl delete ns ingress-nginx
 # Supprime le dépôt Helm (optionnel)
 helm repo remove ingress-nginx
 ```
+
 
 ---
