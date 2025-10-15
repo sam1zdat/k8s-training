@@ -1,8 +1,8 @@
 Thuan ----VM 2 : 46.62.192.156 root WA44mmsV4R9mmHTUHpen
-azureuser iK94xCmsaksqtChT9Hue 135.236.104.112
+azureuser Blue42$Sky!Rain@2024 135.236.104.112
 
 Victoire : VM 3: 65.108.52.215  root iK94xCmsaksqtChT9Hue
-
+azureuser 20.82.99.11  Blue42$Sky!Rain@2024
 
 VM 4: 65.109.136.111  root RRbaMaHKJ7XqvWUwFtvi
 
