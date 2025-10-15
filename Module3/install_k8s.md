@@ -146,13 +146,6 @@ echo $JOIN_COMMAND
 echo "----------------------------------------------------------------------"
 ```
 
-### Étapes à suivre :
-
-1.  **VM Master :** Exécutez le **Script 2**.
-
-2.  **VM Worker :** Copiez et exécutez la commande `kubeadm join ...` affichée par le Script 2 sur le Master.
-
-3.  **VM Master :** Vérifiez la santé du cluster.
 
     ```bash
     kubectl get nodes
@@ -161,4 +154,5 @@ echo "----------------------------------------------------------------------"
 
     Lorsque tous les nœuds sont `Ready` et que les Pods `coredns` et `flannel` sont `Running 1/1`, vous pouvez commencer votre TP.
     
+
     ![alt text](image-1.png)
