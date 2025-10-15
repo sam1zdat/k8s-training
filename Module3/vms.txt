@@ -10,7 +10,7 @@ VM 4: 65.109.136.111  root RRbaMaHKJ7XqvWUwFtvi
 
 --Julien:
 vm10: 20.224.10.177 azureuser Blue42$Sky!Rain@2024
-132.164.73.73 azureuser Blue42$Sky!Rain@2024
+cloud_user 54.193.174.132 Blue42$Sky!Rain@2024
 
 
 VM5: 
@@ -30,5 +30,6 @@ vm9: 4.245.3.186 azureuser Blue42$Sky!Rain@2024
 
 
 Faouzi
-cloud_user 54.193.174.132 GEYN1274upsg
+azureuser Blue42$Sky!Rain@2024 4.231.24.219
+
 
