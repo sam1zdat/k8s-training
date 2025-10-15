@@ -12,9 +12,9 @@ vm6: 40.113.169.239 azureuser Blue42$Sky!Rain@2024
 
 vm7: 172.211.243.108 azureuser Blue42$Sky!Rain@2024
 
-vm8: 40.113.169.239 azureuser Blue42$Sky!Rain@2024
+vm8: 4.180.13.251 azureuser Blue42$Sky!Rain@2024
 
-vm9: 40.113.169.239 azureuser Blue42$Sky!Rain@2024
+vm9: 4.245.3.186 azureuser Blue42$Sky!Rain@2024
 
-vm10: 40.113.169.239 azureuser Blue42$Sky!Rain@2024
+vm10: 20.224.10.177 azureuser Blue42$Sky!Rain@2024
 
