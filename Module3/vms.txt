@@ -1,7 +1,7 @@
-VM 2 : 46.62.192.156 root WA44mmsV4R9mmHTUHpen
+Thuan ----VM 2 : 46.62.192.156 root WA44mmsV4R9mmHTUHpen
 
 
-VM 3:65.108.52.215  root fWTcaM4LdtPnHitUThmV
+Victoire : VM 3: 65.108.52.215  root iK94xCmsaksqtChT9Hue
 
 
 VM 4: 65.109.136.111  root RRbaMaHKJ7XqvWUwFtvi
