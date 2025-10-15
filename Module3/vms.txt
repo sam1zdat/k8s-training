@@ -20,7 +20,7 @@ vm6: 40.113.169.239 azureuser Blue42$Sky!Rain@2024
 
 Nabil
 vm7:  azureuser Blue42$Sky!Rain@2024
-46.62.208.233 root usEaK7PejPhLWxxv4tum
+46.62.208.233 root VVVnEWm7NJtaJLnnbT7e
 
 vm8: 4.180.13.251 azureuser Blue42$Sky!Rain@2024
 18.144.63.63 cloud_user HABW6004xmge
