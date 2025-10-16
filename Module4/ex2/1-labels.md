@@ -74,14 +74,14 @@ Ces commandes modifient les labels de tous les Pods et suppriment les Pods avec 
 
 ---
 
-## 2️⃣ Labels et contrôleurs (Deployments, ReplicaSets, Services)
+## 2️⃣ Labels et contrôleurs (Deployments, ReplicaSets)
 
 ### a) Déployer une application
 ```bash
 kubectl apply -f deployment-label.yaml
 kubectl apply -f service.yaml
 ```
-Ces commandes déploient une application en utilisant un Deployment et un Service.
+Ces commandes déploient une application en utilisant un Deployment.
 
 ### b) Explorer les sélecteurs
 * **Deployment** :
@@ -116,7 +116,7 @@ kubectl get pods --show-labels
 👉 Le ReplicaSet recrée un Pod pour maintenir le nombre de replicas.
 Ces commandes modifient un label de Pod et montrent comment le ReplicaSet réagit.
 
-### d) Étudier le Service
+### d) Étudier le Service (à ne pas faire)
 ```bash
 kubectl get service
 kubectl describe service hello-world
@@ -126,7 +126,7 @@ kubectl get pods -o wide
 👉 Le Service envoie le trafic vers tous les Pods correspondant à `app=hello-world`.
 Ces commandes montrent comment le Service utilise les labels pour diriger le trafic.
 
-### e) Exclure un Pod du Service
+### e) Exclure un Pod du Service (à na pas faire)
 ```bash
 kubectl label pod PASTE_POD_NAME_HERE app=DEBUG --overwrite
 kubectl get pods --show-labels
@@ -190,5 +190,6 @@ Ces commandes nettoient les labels des nœuds et suppriment les Pods créés.
 - Savoir comment les **Deployments/ReplicaSets/Services** utilisent les labels et sélecteurs.
 - Observer que les **Services ne load balancent que les Pods correspondant aux sélecteurs**.
 - Utiliser des **labels de nœuds** pour influencer la planification des Pods via `nodeSelector`.
+
 
 ```
