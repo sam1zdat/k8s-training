@@ -38,6 +38,24 @@ spec:
     pods: "5"              # 5 pods maximum
     services: "3"          # 3 services maximum
 ```
+## 🔍 Explications détaillées
+
+### **Namespace concerné**
+- S'applique au namespace `quota-demo`
+- Doit être créé au préalable : `kubectl create namespace quota-demo`
+
+### **Limites de ressources CPU/Mémoire**
+
+| Ressource | Type | Valeur | Explication |
+|-----------|------|--------|-------------|
+| **CPU** | requests | "2" | Total des CPU demandés par tous les pods |
+| **CPU** | limits | "4" | Total des CPU maximum utilisables |
+| **Mémoire** | requests | 2Gi | Total mémoire réservée |
+| **Mémoire** | limits | 4Gi | Total mémoire maximum utilisable |
+
+### **Limites d'objets Kubernetes**
+- `pods: "5"` → Maximum 5 pods dans le namespace
+- `services: "3"` → Maximum 3 services
 
 ```bash
 # Appliquer le quota
@@ -204,4 +222,5 @@ kubectl delete namespace quota-demo
 - [ ] Le quota CPU/mémoire est appliqué et vérifiable
 - [ ] Un deployment respectant le quota est créé avec succès
 - [ ] Un deployment dépassant le quota est rejeté
+
 - [ ] Le quota avancé est appliqué avec succès
