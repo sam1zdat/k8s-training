@@ -56,7 +56,18 @@ spec:
 ### **Limites d'objets Kubernetes**
 - `pods: "5"` → Maximum 5 pods dans le namespace
 - `services: "3"` → Maximum 3 services
+## ⚠️ Points importants à retenir
 
+1. **Les requests** : ressources réservées/garanties
+2. **Les limits** : ressources maximum utilisables
+3. **Format CPU** : 
+   - "1" = 1 CPU core
+   - "500m" = 0.5 CPU
+   - "250m" = 0.25 CPU
+4. **Format Mémoire** :
+   - 1Gi = 1024 MiB
+   - 1G = 1000 MB (décimal)
+     
 ```bash
 # Appliquer le quota
 kubectl apply -f quota-cpu-memory.yaml
@@ -224,3 +235,4 @@ kubectl delete namespace quota-demo
 - [ ] Un deployment dépassant le quota est rejeté
 
 - [ ] Le quota avancé est appliqué avec succès
+
