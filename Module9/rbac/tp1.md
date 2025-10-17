@@ -84,6 +84,8 @@ kubectl auth can-i get pods --as=system:serviceaccount:demo-rbac:read-only-user 
 # ➤ no
 
 # 2. Simuler une connexion avec ce ServiceAccount
+vous pouvez lancer la création du pod soit par la méthode 1 ou la méthode 2 :
+## méthode 1:
 kubectl run test-access --image=bitnami/kubectl --restart=Never -n demo-rbac \
   --overrides='
 {
@@ -97,7 +99,7 @@ kubectl run test-access --image=bitnami/kubectl --restart=Never -n demo-rbac \
   }
 }'
 
-
+## Méthode 2:
 ## **📝 Fichier YAML complet pour le pod de test**
 
 ```yaml
@@ -115,7 +117,7 @@ spec:
     command: ["sleep", "3600"]
   restartPolicy: Never
 ```
-
+kubectl apply -f test-access-pod.yaml
 
 
 # 3. Tester les commandes depuis le pod
